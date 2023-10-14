@@ -1,0 +1,4 @@
+#profilePic{
+ -fx-background-radius: 60%; /* or any other value */
+ -fx-background-color : red;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="619.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.dashBoradWindowController.SupplierController">
+   <children>
+      <JFXTreeTableView fx:id="tblSupplier" layoutX="38.0" layoutY="66.0" prefHeight="538.0" prefWidth="923.0">
+         <columns>
+            <TreeTableColumn fx:id="colSupplierName" prefWidth="151.20001602172852" style="-fx-background-color: #F1EFEF;" text="Supplier Name" />
+            <TreeTableColumn fx:id="colProduct" minWidth="0.0" prefWidth="117.59996032714844" style="-fx-background-color: #F1EFEF;" text="Product" />
+            <TreeTableColumn fx:id="colContactNumber" prefWidth="127.20001220703125" style="-fx-background-color: #F1EFEF;" text="Contact Number" />
+            <TreeTableColumn fx:id="colEmail" prefWidth="261.5999755859375" style="-fx-background-color: #F1EFEF;" text="Email" />
+            <TreeTableColumn fx:id="colCompany" prefWidth="132.0" style="-fx-background-color: #F1EFEF;" text="Company" />
+            <TreeTableColumn fx:id="colBranch" prefWidth="135.199951171875" style="-fx-background-color: #F1EFEF;" text="Branch" />
+         </columns>
+      </JFXTreeTableView>
+      <Label layoutX="24.0" layoutY="22.0" prefHeight="22.0" prefWidth="90.0" text="Supplier">
+         <font>
+            <Font name="Lucida Sans Unicode" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAddSupplier" layoutX="874.0" layoutY="23.0" onAction="#onclickAddSupplier" style="-fx-background-color: #1366D9;" text="Add Supplier" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Demibold Roman" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

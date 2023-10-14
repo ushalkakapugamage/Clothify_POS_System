@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="577.0" prefWidth="905.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.DashBoardController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="mainNavBar" prefHeight="700.0" prefWidth="200.0" style="-fx-background-color: #1E1E1E;">
+               <children>
+                  <Pane layoutX="18.0" layoutY="24.0" prefHeight="71.0" prefWidth="146.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="72.0" fitWidth="119.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <VBox layoutX="63.0" layoutY="150.0" prefHeight="212.0" prefWidth="120.0">
+                     <children>
+                        <JFXButton fx:id="btnOverview" onAction="#onclickOpenOverview" prefHeight="24.0" prefWidth="92.0" text="Overview" textFill="#a4a6b3">
+                           <font>
+                              <Font name="Lucida Sans Typewriter Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <Pane prefHeight="22.0" prefWidth="200.0" />
+                        <JFXButton fx:id="btn" layoutX="10.0" layoutY="126.0" onAction="#onclickOpeninventory" prefHeight="24.0" prefWidth="92.0" text="Inventory" textFill="#a4a6b3">
+                           <font>
+                              <Font name="Lucida Sans Typewriter Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <Pane prefHeight="22.0" prefWidth="200.0" />
+                        <JFXButton fx:id="btnSalesOrder" layoutX="10.0" layoutY="175.0" onAction="#onclickOpenSalesOrder" prefHeight="24.0" prefWidth="110.0" text="Sales Order" textFill="#a4a6b3">
+                           <font>
+                              <Font name="Lucida Sans Typewriter Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <Pane prefHeight="22.0" prefWidth="200.0" />
+                        <JFXButton fx:id="btnEmployee" layoutX="10.0" layoutY="196.0" onAction="#onclickOpenEmployee" prefHeight="24.0" prefWidth="94.0" text="Employees" textFill="#a4a6b3">
+                           <font>
+                              <Font name="Lucida Sans Typewriter Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <Pane prefHeight="22.0" prefWidth="200.0" />
+                        <JFXButton fx:id="btnSupplier" layoutX="10.0" layoutY="10.0" onAction="#onclickOpenSupplier" prefHeight="24.0" prefWidth="86.0" text="Supplier" textFill="#a4a6b3">
+                           <font>
+                              <Font name="Lucida Sans Typewriter Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <Pane prefHeight="22.0" prefWidth="200.0" />
+                        <JFXButton fx:id="btnReports" layoutX="10.0" layoutY="199.0" onAction="#onclickOpenReports" prefHeight="24.0" prefWidth="82.0" text="Reports" textFill="#a4a6b3">
+                           <font>
+                              <Font name="Lucida Sans Typewriter Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="26.0" layoutY="150.0" prefHeight="212.0" prefWidth="30.0">
+                     <children>
+                        <Pane layoutX="10.0" layoutY="167.0" prefHeight="22.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="20.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Icons/research.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="22.0" prefWidth="173.0" />
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="22.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="20.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Icons/inventory.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="32.0" prefHeight="22.0" prefWidth="173.0" />
+                        <Pane layoutX="10.0" layoutY="32.0" prefHeight="22.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="20.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Icons/cart.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="77.0" prefHeight="22.0" prefWidth="173.0" />
+                        <Pane layoutX="10.0" layoutY="55.0" prefHeight="22.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="20.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Icons/employees.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="122.0" prefHeight="22.0" prefWidth="173.0" />
+                        <Pane layoutX="10.0" layoutY="77.0" prefHeight="22.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="20.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Icons/supplier.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="158.0" prefHeight="22.0" prefWidth="173.0" />
+                        <Pane layoutX="10.0" layoutY="100.0" prefHeight="22.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="20.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Icons/data-analytics.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane layoutX="200.0" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: white;">
+               <children>
+                  <Pane id="profilePic" layoutX="931.0" layoutY="14.0" prefHeight="55.0" prefWidth="55.0">
+                     <children>
+                        <ImageView id="profilePic" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/emp-pic.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label layoutX="837.0" layoutY="42.0" prefHeight="17.0" prefWidth="94.0" text="Employee-001" />
+                  <AnchorPane fx:id="dashBoardPane" layoutY="81.0" prefHeight="619.0" prefWidth="1000.0" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

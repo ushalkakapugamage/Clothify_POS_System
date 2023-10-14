@@ -1,0 +1,30 @@
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import org.example.controller.LoginFormController;
+
+public class Main extends Application {
+
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("view/login_form.fxml"));
+        Parent root = loader.load();
+
+        // Get the controller associated with the loaded FXML
+        LoginFormController loginController = loader.getController();
+
+        // Set the Stage for the loginController
+        loginController.setStage(stage);
+
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+
+}

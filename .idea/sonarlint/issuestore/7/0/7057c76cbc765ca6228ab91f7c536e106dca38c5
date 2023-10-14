@@ -1,0 +1,11 @@
+
+h	java:S112†"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8»„‰Í²1
+€
+java:S11923"cDefine a constant instead of duplicating this literal "FXML file not found: overview.fxml" 7 times.(ËÕù¸8¾„‰Í²1
+U	java:S1063"9Replace this use of System.out or System.err by a logger.(ËÕù¸8û„‰Í²1
+U	java:S106A"9Replace this use of System.out or System.err by a logger.(ËÕù¸8ÿ„‰Í²1
+U	java:S106N"9Replace this use of System.out or System.err by a logger.(ËÕù¸8‚…‰Í²1
+U	java:S106\"9Replace this use of System.out or System.err by a logger.(ËÕù¸8……‰Í²1
+U	java:S106j"9Replace this use of System.out or System.err by a logger.(ËÕù¸8ˆ…‰Í²1
+U	java:S106x"9Replace this use of System.out or System.err by a logger.(ËÕù¸8Œ…‰Í²1
+V	java:S106‹"9Replace this use of System.out or System.err by a logger.(ËÕù¸8”…‰Í²1
