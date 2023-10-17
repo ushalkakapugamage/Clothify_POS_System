@@ -4,6 +4,7 @@ import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
@@ -34,8 +35,7 @@ public class SignUpFormController {
 
     @FXML
     void onclickSignUp(ActionEvent event) throws IOException {
-        loginStage.close();
-        Stage stage = new Stage();
+        Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         Parent root = FXMLLoader.load(getClass().getResource("/view/dashboard.fxml"));
         stage.setScene(new Scene(root));
         stage.show();

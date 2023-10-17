@@ -39,6 +39,10 @@ public class DashBoardController implements Initializable {
     @FXML
     private Pane mainNavBar;
 
+    public AnchorPane getAnchorPane(){
+        return dashBoardPane;
+    }
+
     @FXML
     void onclickOpenEmployee(ActionEvent event) throws IOException {
         URL resource = getClass().getResource("/view/DashboardWindows/employee.fxml");

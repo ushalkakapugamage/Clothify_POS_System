@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="619.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.dashBoradWindowController.InventoryController">
+<AnchorPane fx:id="dashBoardPane" prefHeight="619.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.dashBoradWindowController.InventoryController">
    <children>
-      <Label layoutX="196.0" layoutY="54.0" prefHeight="18.0" prefWidth="69.0" text="Inventory" />
+      <JFXTreeTableView fx:id="tblProduct" layoutX="50.0" layoutY="66.0" prefHeight="538.0" prefWidth="906.0">
+         <columns>
+            <TreeTableColumn fx:id="colProduct" prefWidth="190.0" style="-fx-background-color: #F1EFEF;" text="Product" />
+            <TreeTableColumn fx:id="colBuyingPrice" minWidth="0.0" prefWidth="140.0" style="-fx-background-color: #F1EFEF;" text="Buying Price" />
+            <TreeTableColumn fx:id="colBoughtQuantity" prefWidth="160.0" style="-fx-background-color: #F1EFEF;" text="Bought Quantity" />
+            <TreeTableColumn fx:id="colSellingPrice" prefWidth="140.0" style="-fx-background-color: #F1EFEF;" text="Selling Price" />
+            <TreeTableColumn fx:id="colSoldItem" prefWidth="140.0" style="-fx-background-color: #F1EFEF;" text="Sold Item" />
+            <TreeTableColumn fx:id="colAvailability" prefWidth="140.0" style="-fx-background-color: #F1EFEF;" text="Availability" />
+         </columns>
+      </JFXTreeTableView>
+      <Label layoutX="24.0" layoutY="22.0" prefHeight="22.0" prefWidth="90.0" text="Inventory">
+         <font>
+            <Font name="Lucida Sans Unicode" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAddProduct" layoutX="874.0" layoutY="23.0" onAction="#onclickAddSupplier" style="-fx-background-color: #1366D9;" text="Add Product" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Demibold Roman" size="14.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>

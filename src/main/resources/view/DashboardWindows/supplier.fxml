@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="619.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.dashBoradWindowController.SupplierController">
+<AnchorPane fx:id="dashBoardPane" prefHeight="619.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.dashBoradWindowController.SupplierController">
    <children>
       <JFXTreeTableView fx:id="tblSupplier" layoutX="38.0" layoutY="66.0" prefHeight="538.0" prefWidth="923.0">
          <columns>
@@ -24,7 +24,7 @@
             <Font name="Lucida Sans Unicode" size="18.0" />
          </font>
       </Label>
-      <JFXButton fx:id="btnAddSupplier" layoutX="874.0" layoutY="23.0" onAction="#onclickAddSupplier" style="-fx-background-color: #1366D9;" text="Add Supplier" textFill="WHITE">
+      <JFXButton layoutX="864.0" layoutY="23.0" onAction="#OnClickAddSupplier" style="-fx-background-color: #1366D9;" text="Add Supplier" textFill="WHITE">
          <font>
             <Font name="Lucida Sans Demibold Roman" size="14.0" />
          </font>

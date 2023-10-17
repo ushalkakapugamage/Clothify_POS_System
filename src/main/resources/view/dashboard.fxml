@@ -129,19 +129,24 @@
                   </VBox>
                </children>
             </Pane>
-            <Pane layoutX="200.0" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: white;">
+            <Pane id="profilePic" prefHeight="55.0" prefWidth="55.0" />
+            <Pane layoutX="200.0" prefHeight="700.0" prefWidth="1000.0">
                <children>
-                  <Pane id="profilePic" layoutX="931.0" layoutY="14.0" prefHeight="55.0" prefWidth="55.0">
+                  <AnchorPane fx:id="dashBoardPane" layoutY="81.0" prefHeight="619.0" prefWidth="1000.0" />
+                  <AnchorPane layoutY="-1.0" prefHeight="86.0" prefWidth="1002.0" style="-fx-background-color: #1E1E1E;">
                      <children>
-                        <ImageView id="profilePic" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView id="profilePic" fitHeight="55.0" fitWidth="55.0" layoutX="933.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../images/emp-pic.jpg" />
                            </image>
                         </ImageView>
+                        <Label layoutX="829.0" layoutY="34.0" prefHeight="17.0" prefWidth="94.0" text="Employee-001" textFill="WHITE">
+                           <font>
+                              <Font name="Lucida Sans Unicode" size="13.0" />
+                           </font>
+                        </Label>
                      </children>
-                  </Pane>
-                  <Label layoutX="837.0" layoutY="42.0" prefHeight="17.0" prefWidth="94.0" text="Employee-001" />
-                  <AnchorPane fx:id="dashBoardPane" layoutY="81.0" prefHeight="619.0" prefWidth="1000.0" />
+                  </AnchorPane>
                </children>
             </Pane>
          </children>

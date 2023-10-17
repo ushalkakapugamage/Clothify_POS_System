@@ -7,8 +7,6 @@ m
 =src/main/java/org/example/controller/LoginFormController.java,d\4\d4b13899cdbc7c256bce11f96391f4b610fc0c2e
 †
 Vsrc/main/java/org/example/controller/dashBoradWindowController/SupplierController.java,a\2\a2e416040060d7b9f771fd01f0385e9038eb3bfe
-^
-.src/main/java/org/example/db/DBconnection.java,a\b\ab1612caa2fa30d43b4aa99b95220c722fd77ee5
 m
 =src/main/java/org/example/controller/DashBoardController.java,7\0\7057c76cbc765ca6228ab91f7c536e106dca38c5
 †
@@ -17,3 +15,17 @@ Vsrc/main/java/org/example/controller/dashBoradWindowController/EmployeeControll
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 †
 Vsrc/main/java/org/example/controller/dashBoradWindowController/OverviewController.java,1\8\18bb0bdaf7fddf6367ba4d2bc445a1a1532058af
+‰
+Ysrc/main/java/org/example/controller/dashBoradWindowController/ControllerAddSupplier.java,d\a\da0e65bbb2d3622bbafccea2edd4e6d88b72a7e6
+>
+POS-System.iml,9\5\9577ae0b2934fd632c0b66315d4c9a3c960815c9
+b
+2src/main/java/org/example/utils/HibernateUtil.java,e\2\e2f57589cd3623511bb32d08a9c1f8fd31496530
+[
++src/main/java/org/example/dto/Supplier.java,6\e\6e9befbd0c80c9eeb5b4a4afd77460304fd4a5c3
+a
+1src/main/java/org/example/dao/SupplierEntity.java,5\5\55c70d2717fcf57182c2d88caeba6a4635736844
+‡
+Wsrc/main/java/org/example/controller/dashBoradWindowController/InventoryController.java,a\c\ac7976ceba23a4151b2a764bef1f2a4b5f9f330c
+ˆ
+Xsrc/main/java/org/example/controller/dashBoradWindowController/ControllerAddProduct.java,0\0\00cb80f9b37671fd38c22af00b9815af09c4a094

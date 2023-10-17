@@ -6,13 +6,15 @@
 <?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="619.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.dashBoradWindowController.OverviewController">
+<AnchorPane prefHeight="619.0" prefWidth="1000.0" style="-fx-background-color: rgb(238, 238, 238);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.dashBoradWindowController.OverviewController">
    <children>
-      <Pane layoutX="30.0" layoutY="319.0" prefHeight="270.0" prefWidth="940.0" style="-fx-background-color: #E6E6E6; -fx-background-radius: 10;">
+      <Pane layoutX="30.0" layoutY="319.0" prefHeight="270.0" prefWidth="940.0" style="-fx-background-color: white; -fx-background-radius: 10;">
          <children>
             <AreaChart fx:id="SalesProfitChart" layoutX="23.0" layoutY="1.0" prefHeight="270.0" prefWidth="894.0">
               <xAxis>
@@ -23,13 +25,27 @@
               </yAxis>
             </AreaChart>
          </children></Pane>
-      <Pane layoutX="586.0" layoutY="23.0" prefHeight="270.0" prefWidth="384.0">
+      <Pane layoutX="586.0" layoutY="23.0" prefHeight="270.0" prefWidth="384.0" style="-fx-background-radius: 10; -fx-background-color: white;">
          <children>
-            <Pane layoutX="34.0" layoutY="72.0" prefHeight="187.0" prefWidth="124.0" style="-fx-background-color: grey; -fx-background-radius: 10;" />
-            <Pane layoutX="220.0" layoutY="68.0" prefHeight="187.0" prefWidth="124.0" style="-fx-background-color: grey; -fx-background-radius: 10;" />
+            <Pane layoutX="51.0" layoutY="68.0" prefHeight="187.0" prefWidth="124.0" style="-fx-background-color: grey; -fx-background-radius: 10;">
+               <children>
+                  <ImageView fitHeight="187.0" fitWidth="124.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../images/jacket.jpeg" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane layoutX="206.0" layoutY="68.0" prefHeight="187.0" prefWidth="124.0" style="-fx-background-color: grey; -fx-background-radius: 10;">
+               <children>
+                  <ImageView fitHeight="187.0" fitWidth="124.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../images/dress.jpeg" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
             <Label layoutX="24.0" layoutY="18.0" prefHeight="18.0" prefWidth="99.0" text="Top Selling">
                <font>
-                  <Font name="Lucida Sans Typewriter Bold" size="14.0" />
+                  <Font name="Franklin Gothic Demi" size="18.0" />
                </font>
             </Label>
             <TitledPane expanded="false" layoutX="247.0" layoutY="14.0" prefHeight="112.0" prefWidth="130.0" text="Sort By">
@@ -45,7 +61,69 @@
             </TitledPane>
          </children>
       </Pane>
-      <Pane layoutX="30.0" layoutY="39.0" prefHeight="122.0" prefWidth="533.0" style="-fx-background-color: #E6E6E6; -fx-background-radius: 10;" />
-      <Pane layoutX="30.0" layoutY="170.0" prefHeight="122.0" prefWidth="534.0" style="-fx-background-color: #E6E6E6; -fx-background-radius: 10;" />
+      <Pane layoutX="30.0" layoutY="22.0" prefHeight="270.0" prefWidth="534.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="10.0" layoutY="14.0" prefHeight="18.0" prefWidth="124.0" text="Sales Activity">
+               <font>
+                  <Font name="Franklin Gothic Demi" size="18.0" />
+               </font>
+            </Label>
+            <Pane layoutX="19.0" layoutY="53.0" prefHeight="161.0" prefWidth="106.0" style="-fx-background-color: E6E6E6; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="20.0" layoutY="131.0" text="Confirmed">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="14.0" text="30" textFill="#029100">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="64.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="151.0" layoutY="53.0" prefHeight="161.0" prefWidth="106.0" style="-fx-background-color: E6E6E6; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="7.0" layoutY="131.0" text="To Be Shipped">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="14.0" text="25" textFill="#1e00c7">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="64.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="285.0" layoutY="53.0" prefHeight="161.0" prefWidth="106.0" style="-fx-background-color: E6E6E6; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="3.0" layoutY="131.0" text="To Be Delivered">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="14.0" text="07" textFill="#bc0000">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="64.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="410.0" layoutY="53.0" prefHeight="161.0" prefWidth="106.0" style="-fx-background-color: E6E6E6; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="7.0" layoutY="131.0" text="To be invoiced">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="14.0" text="05" textFill="#e5d700">
+                     <font>
+                        <Font name="Bernard MT Condensed" size="64.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></Pane>
    </children>
 </AnchorPane>

@@ -16,13 +16,6 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("view/login_form.fxml"));
         Parent root = loader.load();
-
-        // Get the controller associated with the loaded FXML
-        LoginFormController loginController = loader.getController();
-
-        // Set the Stage for the loginController
-        loginController.setStage(stage);
-
         stage.setScene(new Scene(root));
         stage.show();
     }

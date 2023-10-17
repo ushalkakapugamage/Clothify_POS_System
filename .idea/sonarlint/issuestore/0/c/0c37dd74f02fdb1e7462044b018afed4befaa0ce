@@ -1,0 +1,5 @@
+
+{
+java:S1450"YRemove the "loginStage" field and declare it as a local variable in the relevant methods.(ÇÐ›§ûÿÿÿÿ8ëºÇ¾³1
+P
+java:S1068".Remove this unused "loginStage" private field.(ÇÐ›§ûÿÿÿÿ8ýºÇ¾³1
