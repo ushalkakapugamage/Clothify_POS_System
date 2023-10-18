@@ -1,11 +1,11 @@
 
-h	java:S112Š"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÏŞŒ¶³1
+h	java:S112Š"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8›Ÿâñ³1
 €
-java:S11927"cDefine a constant instead of duplicating this literal "FXML file not found: overview.fxml" 7 times.(ËÕù¸8ÜŞŒ¶³1
-G	java:S1067"+Replace this use of System.out by a logger.(ËÕù¸8œßŒ¶³1
-G	java:S106E"+Replace this use of System.out by a logger.(ËÕù¸8 ßŒ¶³1
-G	java:S106R"+Replace this use of System.out by a logger.(ËÕù¸8¡ßŒ¶³1
-G	java:S106`"+Replace this use of System.out by a logger.(ËÕù¸8£ßŒ¶³1
-G	java:S106n"+Replace this use of System.out by a logger.(ËÕù¸8¥ßŒ¶³1
-G	java:S106|"+Replace this use of System.out by a logger.(ËÕù¸8§ßŒ¶³1
-H	java:S106"+Replace this use of System.out by a logger.(ËÕù¸8¬ßŒ¶³1
+java:S11927"cDefine a constant instead of duplicating this literal "FXML file not found: overview.fxml" 7 times.(ËÕù¸8ªŸâñ³1
+G	java:S1067"+Replace this use of System.out by a logger.(ËÕù¸8ßŸâñ³1
+G	java:S106E"+Replace this use of System.out by a logger.(ËÕù¸8áŸâñ³1
+G	java:S106R"+Replace this use of System.out by a logger.(ËÕù¸8ãŸâñ³1
+G	java:S106`"+Replace this use of System.out by a logger.(ËÕù¸8äŸâñ³1
+G	java:S106n"+Replace this use of System.out by a logger.(ËÕù¸8æŸâñ³1
+G	java:S106|"+Replace this use of System.out by a logger.(ËÕù¸8çŸâñ³1
+H	java:S106"+Replace this use of System.out by a logger.(ËÕù¸8êŸâñ³1

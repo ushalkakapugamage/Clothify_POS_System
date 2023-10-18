@@ -22,6 +22,7 @@ import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeTableColumn;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TreeItemPropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import org.example.dao.SupplierEntity;
 import org.example.utils.HibernateUtil;
@@ -67,7 +68,6 @@ public class SupplierController implements Initializable {
 
     @FXML
     void OnClickAddSupplier(ActionEvent event) throws IOException {
-        System.out.println("hi");
         URL resource = getClass().getResource("../../../../view/DashboardWindows/addSupplier.fxml");
 
         if (resource != null){
@@ -96,8 +96,6 @@ public class SupplierController implements Initializable {
     }
 
     private void loadTable() {
-
-
         Session session = HibernateUtil.getSession();
         Query<SupplierEntity> query = session.createQuery("FROM SupplierEntity", SupplierEntity.class);
         List<SupplierEntity> list = query.getResultList();
@@ -110,6 +108,39 @@ public class SupplierController implements Initializable {
         tblSupplier.setShowRoot(false);
 
     }
+
+    @FXML
+    void onClickShowSupplier(MouseEvent event) throws IOException {
+        URL resource = getClass().getResource("../../../../view/DashboardWindows/addSupplier.fxml");
+
+        if (resource != null){
+            Parent load = FXMLLoader.load(resource);
+            this.dashBoardPane.getChildren().add(load);
+        }else {
+            System.out.println("FXML file not found: overview.fxml");
+        }
+
+        if (event.getClickCount() == 1) {
+            TreeItem<SupplierEntity> selectedItem = (TreeItem<SupplierEntity>) tblSupplier.getSelectionModel().getSelectedItem();
+            if (selectedItem != null) {
+                SupplierEntity selectedSupplier = selectedItem.getValue();
+                // Now you have the selected SupplierEntity, and you can display its data or perform any other actions.
+                System.out.println("Selected Supplier: " + selectedSupplier);
+            }
+        }
+    }
+
+//    tblSupplier.setOnMouseClicked(event -> {
+//        if (event.getClickCount() == 1) {
+//            TreeItem<SupplierEntity> selectedItem = tblSupplier.getSelectionModel().getSelectedItem();
+//            if (selectedItem != null) {
+//                SupplierEntity selectedSupplier = selectedItem.getValue();
+//                // Now you have the selected SupplierEntity, and you can display its data or perform any other actions.
+//                System.out.println("Selected Supplier: " + selectedSupplier);
+//            }
+//        }
+//    });
+
 
 
 

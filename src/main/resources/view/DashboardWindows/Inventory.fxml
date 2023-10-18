@@ -24,7 +24,7 @@
             <Font name="Lucida Sans Unicode" size="18.0" />
          </font>
       </Label>
-      <JFXButton fx:id="btnAddProduct" layoutX="874.0" layoutY="23.0" onAction="#onclickAddSupplier" style="-fx-background-color: #1366D9;" text="Add Product" textFill="WHITE">
+      <JFXButton fx:id="btnAddProduct" layoutX="874.0" layoutY="23.0" onAction="#onclickAddproduct" style="-fx-background-color: #1366D9;" text="Add Product" textFill="WHITE">
          <font>
             <Font name="Lucida Sans Demibold Roman" size="14.0" />
          </font>

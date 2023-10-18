@@ -4,8 +4,13 @@ import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTreeTableView;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.TreeTableColumn;
 import javafx.scene.layout.AnchorPane;
+
+import java.io.IOException;
+import java.net.URL;
 
 public class InventoryController {
 
@@ -37,7 +42,16 @@ public class InventoryController {
     private JFXTreeTableView<?> tblProduct;
 
     @FXML
-    void onclickAddSupplier(ActionEvent event) {
+    void onclickAddproduct(ActionEvent event) throws IOException {
+        System.out.println("hi");
+        URL resource = getClass().getResource("/view/DashboardWindows/addProduct.fxml");
+
+        if (resource != null){
+            Parent load = FXMLLoader.load(resource);
+            this.dashBoardPane.getChildren().add(load);
+        }else {
+            System.out.println("FXML file not found: overview.fxml");
+        }
 
     }
 

@@ -10,6 +10,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import org.example.controller.DashBoardController;
 import org.example.dao.SupplierEntity;
 import org.example.utils.HibernateUtil;
 import org.hibernate.Session;
@@ -60,6 +61,27 @@ public class ControllerAddSupplier implements Initializable {
     @FXML
     private AnchorPane addSupplierPane;
 
+
+    @FXML
+    void onClickBack(ActionEvent event) throws IOException {
+        URL resource = getClass().getResource("/view/DashboardWindows/supplier.fxml");
+
+        if (resource != null){
+            Parent load = FXMLLoader.load(resource);
+            this.addSupplierPane.getChildren().clear();
+            this.addSupplierPane.getChildren().add(load);
+        }else {
+            System.out.println("FXML file not found: overview.fxml");
+        }
+    }
+
+
+    @FXML
+    void btnOnClickDeleteSupplier(ActionEvent event) {
+
+    }
+
+
     @FXML
     void btnOnClickAddSupplier(ActionEvent event) {
         System.out.println();
@@ -90,18 +112,10 @@ public class ControllerAddSupplier implements Initializable {
     }
 
     @FXML
-    void btnOnClickDiscardSupplier(ActionEvent event) throws IOException {
-        URL resource = getClass().getResource("/view/DashboardWindows/supplier.fxml");
-
-        if (resource != null){
-            Parent load = FXMLLoader.load(resource);
-            this.addSupplierPane.getChildren().clear();
-            this.addSupplierPane.getChildren().add(load);
-        }else {
-            System.out.println("FXML file not found: overview.fxml");
-        }
+    void btnOnClickUpdateSupplier(ActionEvent event) {
 
     }
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -123,4 +137,5 @@ public class ControllerAddSupplier implements Initializable {
             lblSupplierID.setText("S001");
         }
     }
+
 }

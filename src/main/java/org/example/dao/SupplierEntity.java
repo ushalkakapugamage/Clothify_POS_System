@@ -26,4 +26,6 @@ public class SupplierEntity extends RecursiveTreeObject<SupplierEntity> {
     private String email;
     private String company;
     private String branch;
+
+
 }

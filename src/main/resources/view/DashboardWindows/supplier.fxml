@@ -9,7 +9,7 @@
 
 <AnchorPane fx:id="dashBoardPane" prefHeight="619.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.dashBoradWindowController.SupplierController">
    <children>
-      <JFXTreeTableView fx:id="tblSupplier" layoutX="38.0" layoutY="66.0" prefHeight="538.0" prefWidth="923.0">
+      <JFXTreeTableView fx:id="tblSupplier" layoutX="38.0" layoutY="66.0" onMouseClicked="#onClickShowSupplier" prefHeight="538.0" prefWidth="923.0">
          <columns>
             <TreeTableColumn fx:id="colSupplierName" prefWidth="151.20001602172852" style="-fx-background-color: #F1EFEF;" text="Supplier Name" />
             <TreeTableColumn fx:id="colProduct" minWidth="0.0" prefWidth="117.59996032714844" style="-fx-background-color: #F1EFEF;" text="Product" />
